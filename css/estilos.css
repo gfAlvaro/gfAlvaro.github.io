@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcoral;
+    margin: 0;
+}
+
+header{
+    background-color: darkred;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 1px;
+}
+
+header img{
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+}
+
+article {
+    background-color: cyan;
+    margin: 1em;
+}
+
+article h3 {
+    background-color: darkcyan;
+    color: white;
+    padding: 0em;
+    margin: 0;
+    width: 100;
+}
+
+footer{
+    background-color: darkred;
+    color: white;
+    padding: 1px;    
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px){
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header img {
+        margin-left: 5em;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
