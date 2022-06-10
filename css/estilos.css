@@ -1,52 +1,79 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightcoral;
+    background: linear-gradient(to bottom right, lightgreen, lightblue );
     margin: 0;
+}
+
+header, footer {
+    background-image: url("../img/milkyway.jpeg");
+    background-size: cover;
 }
 
 header{
-    background-color: darkred;
+    display: block;
     color: white;
-    width: 100%;
-    margin: 0;
-    padding: 1px;
+    box-shadow: 0px 5px 5px black;
+    text-align: center;
+    padding: 0.1em;
 }
 
-header img{
+#foto {
     display: block;
+    width: 125px;
+    height: auto;
     margin: auto;
     border-radius: 100%;
 }
 
+header div {
+    margin: auto;
+    text-shadow: 0.1em 0.1em lightblue;
+}
+
 article {
-    background-color: cyan;
+    background: linear-gradient(to top left, cyan, magenta);
     margin: 1em;
+    border-radius: 1em;
+    box-shadow: 5px 5px 5px black;
+    padding: 1em;
 }
 
 article h3 {
-    background-color: darkcyan;
-    color: white;
-    padding: 0em;
-    margin: 0;
-    width: 100;
+    color: blue;
+    text-align: center;
+    font-family: fantasy;
+    text-shadow: 0.1em 0.1em black;
 }
 
 footer{
-    background-color: darkred;
     color: white;
-    padding: 1px;    
+    padding: 2em;    
     text-align: center;
-    width: 100%;
+    box-shadow: 0px -5px 5px black;
 }
 
-@media only screen and (min-width: 800px){
+footer h3 {
+    text-shadow: 0.1em 0.1em lightblue;
+}
+
+#email {
+    text-decoration: none;
+    color: orange;
+}
+
+/* Para tablets y PC */
+@media only screen and (min-width: 801px){
     header{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    header img {
+    #foto {
         margin-left: 5em;
+    }
+
+    header div {
+        margin-right: 5em;
     }
 
     main{
