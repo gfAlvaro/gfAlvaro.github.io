@@ -10,6 +10,7 @@ header, footer {
 
 nav ul {
     list-style-type: none;
+    padding: 0;
     display: flexbox;
 }
 
@@ -29,7 +30,7 @@ header{
     padding: 0.1em;
 }
 
-.iconosredes > a > img{
+.iconosredes > a > img {
     width: 50px;
     height: 50px;
 }
