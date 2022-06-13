@@ -1,20 +1,81 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom right, lightgreen, lightblue );
+    background: white;
     margin: 0;
 }
 
 header, footer {
-    background-image: url("../img/milkyway.jpeg");
-    background-size: cover;
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flexbox;
+}
+
+nav ul li {
+    margin: 0.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
 }
 
 header{
-    display: block;
-    color: white;
-    box-shadow: 0px 5px 5px black;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px gray;
     text-align: center;
     padding: 0.1em;
+}
+
+.iconosredes > a > img{
+    width: 50px;
+    height: 50px;
+}
+main {
+    background-image: url("../img/fondo.jpg");
+    background-size:cover;
+    background-color: lightgray;
+}
+
+#titulologo {
+    margin: auto;
+    text-shadow: 0.1em 0.1em rgb(63, 63, 63);
+}
+
+#home, #proyectos {
+    text-align: center;
+}
+
+#proyectos ul{
+    margin-top: 5em;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+#proyectos ul li {
+    padding: 1em;
+}
+
+#proyectos ul li a {
+    text-decoration: none;
+}
+
+article {
+    margin: 1em;
+    padding: 1em;
+}
+
+article h3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0.1em 0.1em rgb(63, 63, 63);
+}
+
+#skills ul {
+    list-style-type: none;
 }
 
 #foto {
@@ -25,35 +86,11 @@ header{
     border-radius: 100%;
 }
 
-header div {
-    margin: auto;
-    text-shadow: 0.1em 0.1em lightblue;
-}
-
-article {
-    background: linear-gradient(to top left, cyan, magenta);
-    margin: 1em;
-    border-radius: 1em;
-    box-shadow: 5px 5px 5px black;
-    padding: 1em;
-}
-
-article h3 {
-    color: blue;
-    text-align: center;
-    font-family: fantasy;
-    text-shadow: 0.1em 0.1em black;
-}
-
 footer{
     color: white;
-    padding: 2em;    
+    padding: 1em;
     text-align: center;
-    box-shadow: 0px -5px 5px black;
-}
-
-footer h3 {
-    text-shadow: 0.1em 0.1em lightblue;
+    box-shadow: 0px -5px 5px gray;
 }
 
 #email {
@@ -61,23 +98,88 @@ footer h3 {
     color: orange;
 }
 
-/* Para tablets y PC */
+ /*Para tablets y PC */
 @media only screen and (min-width: 801px){
+    html, body{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        height: 100%;
+    }
+
     header{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
+    header * {
+        margin: auto;
+    }
+
+    header nav ul {
+        display: flex;
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        flex: 10 1 auto;
+        }
+    
+    article {
+        flex: 80em 0 0;
+        scroll-snap-align: start;
+        object-fit: cover;
+    }
+
+    #home {
+        margin: auto;
+    }
+
+    #skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #skills h3 {
+        grid-column: 1/3;
+        grid-row: 1;
+        margin-bottom: 0;
+    }
+
+    #softskills {
+        margin: auto;
+        margin-top: 0;
+    }
+    #hardskills {
+        margin: auto;
+        margin-top: 0;
+    }
     #foto {
         margin-left: 5em;
+    }
+
+    #wrappermi {
+        display: flex;
+    }
+
+    #wrappermi * {
+        margin: auto;
+        margin-top: 0;
+        padding: 2em;
     }
 
     header div {
         margin-right: 5em;
     }
 
-    main{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    footer{
+        flex: 1 0 auto;
+    }
+
+    #iconosredesfooter{
+        display: none;
     }
 }
