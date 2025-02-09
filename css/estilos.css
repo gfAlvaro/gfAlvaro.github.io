@@ -65,6 +65,7 @@ main {
 }
 
 article {
+    width: 100%;
     margin: 1em;
     padding: 1em;
 }
@@ -99,6 +100,24 @@ footer{
     color: orange;
 }
 
+#menosuno, #masuno {
+    display: none;
+    margin: 1em;
+}
+
+#menosuno {
+    left: 0;
+}
+
+#masuno {
+    right: 0;
+}
+@media only screen and (max-width: 800px){
+article{
+    display: block;
+}
+}
+
  /*Para tablets y PC */
 @media only screen and (min-width: 801px){
     html, body{
@@ -128,12 +147,16 @@ footer{
         scroll-snap-type: x mandatory;
         flex: 10 1 auto;
         }
+
+    #menosuno, #masuno {display: block;}
+
+    .mySlides {display:none;}
     
-    article {
-        flex: 80em 0 0;
+    /* article {
+        flex: 100% 0 0;
         scroll-snap-align: start;
         object-fit: cover;
-    }
+    } */
 
     #home {
         margin: auto;

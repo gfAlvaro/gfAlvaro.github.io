@@ -5,10 +5,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="js/script.js"></script>
         <title>Álvaro García Fuentes. Desarrollador de Aplicaciones Web</title>
     </head>
     <body>
         <header>
+            <img id="logo" src="img/logo.png">
             <nav id="navegador">
                 <ul>
                     <li><a href="#home">HOME</a></li>
@@ -16,65 +19,76 @@
                     <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#sobremi">SOBRE MÍ</a></li>
                 </ul>
-            </nav>
+            </nav> 
+        </header>
+        <main>
+            <div class="w3-content w3-display-container">
+                <button class="w3-button w3-black w3-display-left" id="menosuno">&#10094;</button>
+
+
+                <article class="mySlides" id="home">
+                    <div id="titulologo">
+                        <img src="img/logo.png">
+                        <h2>Técnico Superior en Desarrollo de Aplicaciones Web</h2>
+                    </div>
+                </article>
+                <article class="mySlides" id="proyectos">
+                    <h3>Mis proyectos</h3>
+                    <ul>
+                        <li><a href="https://gfalvaro.github.io/mastermind/">Juego Web MasterMind</a>
+                        <li><a href="https://gfalvaro.github.io/gestor-de-tareas/">Modelo de gestor de tareas para instituto.</a>
+                        <li><a href="https://gfalvaro.github.io/casas-rurales/">Modelo de página para web de casas rurales</a>
+                    </ul>
+                </article>
+                <article class="mySlides" id="skills">
+                    <h3>Mis aptitudes</h3>
+                    <div id="softskills">
+                        <h4>Softskills</h4>
+                        <ul>
+                            <li>Ordenado y responsable.</li>
+                            <li>Capaz de trabajar en equipo.</li>
+                            <li>Abierto a aprender.</li>
+                            <li>Comprometido.</li>
+                            <li>Adaptativo.</li>
+                        </ul>
+                    </div>
+                    <div id="hardskills">
+                        <h4>Hardskills</h4>
+                        <ul>
+                            <li>Programación: Java, Python, JavaScript, PHP, HTML5, CSS3, C, C++.</li>
+                            <li>Bases de datos: MySQL y MongoDB</li>
+                            <li>Gestión de servidores: Apache, Tomcat, Nginx, Wordpress, PHPMyAdmin.</li>
+                            <li>Manejo de máquinas virtuales: VirtualBox, VMWare.</li>
+                            <li>Frameworks: Angular, Laravel</li>
+                        </ul>
+                    </div>
+                    <div id="idiomas">
+                        <h4>Idiomas</h4>
+                        <ul>
+                            <li>Inglés avanzado, certificado B2.</li>
+                            <li>Castellano nativo.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="mySlides" id="sobremi">
+                    <h3>Sobre Mí</h3>
+                  <div id="wrappermi">
+                        <img id="foto" src="img/CARNET.jpg">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Estudié Bachillerato de Ciencias de la Salud, y más tarde estudié FP Grado Superior en Desarrollo de Aplicaciones Web. En este momento me encuentro estudiando Ingeniería Informática, sin embargo estoy abierto al mercado laboral. 
+                            Estoy interesado en los sectores del desarrollo web, el big data, la cíberseguridad, la IA y el Machine Learning.</p>
+                    </div>
+                </article>
+
+                <button class="w3-button w3-black w3-display-right" id="masuno">&#10095;</button>
+            </div>
+        </main>
+        <footer>
+            <h3>Contacto</h3>
             <div class="iconosredes">
                 <a href="https://www.linkedin.com/in/%C3%A1lvaro-garc%C3%ADa-fuentes-199276158/"><img src="img/linkedin.png"></a>
                 <a href="https://github.com/gfAlvaro"><img src="img/github.png"></a>
             </div> 
-        </header>
-        <main>
-            <article id="home">
-                <div id="titulologo">
-                    <img src="img/logo.png">
-                    <h2>Desarrollador de Aplicaciones Web</h2>
-                </div>
-                               
-            </article>
-            <article id="proyectos">
-                <h3>Mis proyectos</h3>
-                <ul>
-                    <li><a href="https://gfalvaro.github.io/mastermind/">Juego Web MasterMind</a>
-                    <li><a href="https://gfalvaro.github.io/gestor-de-tareas/">Modelo de gestor de tareas para instituto.</a>
-                    <li><a href="https://gfalvaro.github.io/casas-rurales/">Modelo de página para web de casas rurales</a>
-                </ul>
-            </article>
-            <article id="skills">
-                <h3>Mis aptitudes</h3>
-                <div id="softskills">
-                    <h4>Softskills</h4>
-                    <ul>
-                        <li>Ordenado</li>
-                        <li>Serio</li>
-                        <li>Perseverante en mi trabajo</li>
-                        <li>Capaz de trabajar en equipo</li>
-                    </ul>
-                </div>
-                <div id="hardskills">
-                    <h4>Hardskills</h4>
-                    <ul>
-                        <li>Programación: Java, Python, JavaScript, PHP, HTML5, CSS3, C, C++.</li>
-                        <li>Bases de datos relacionales: MySQL, JDBC, JPA Maven</li>
-                        <li>Gestión de servidores: Apache, Tomcat, Nginx, Wordpress, PHPMyAdmin.</li>
-                        <li>Manejo de máquinas virtuales: VirtualBox, VMWare.</li>
-                    </ul>
-                </div>
-            </article>
-            <article id="sobremi">
-                <h3>Sobre Mí</h3>
-                <div id="wrappermi">
-                    <img id="foto" src="img/CARNET.jpg">
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Estudié Bachillerato de Ciencias de la Salud. En este momento me encuentro estudiando el Grado Superior de Desarrollo de Aplicaciones Web. 
-                        Estoy interesado en los sectores del desarrollo web, el big data, la cíberseguridad y el Machine Learning. Me considero una persona con la mente abierta y talante optimista.</p>
-                </div>
-            </article>
-        </main>
-        <footer>
-            <h3>Contacto</h3>
-            <div class="iconosredes" id="iconosredesfooter">
-                <a href="https://www.linkedin.com/in/%C3%A1lvaro-garc%C3%ADa-fuentes-199276158/"><img src="img/linkedin.png"></a>
-                <a href="https://github.com/gfAlvaro"><img src="img/github.png"></a>
-            </div> 
-            <p>Teléfono: 628146841</p>
+            <p>Teléfono:<a href="tel:+34628146841"> +34 628 14 68 41</a></p>
             <p>Email: <a id="email" href="mailto:gf_alvaro@hotmail.com">gf_alvaro@hotmail.com</a></p>
         </footer>
     </body>
