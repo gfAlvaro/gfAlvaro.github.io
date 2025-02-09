@@ -66,8 +66,6 @@ main {
 
 article {
     width: 100%;
-    margin: 1em;
-    padding: 1em;
 }
 
 article h3 {
@@ -112,11 +110,7 @@ footer{
 #masuno {
     right: 0;
 }
-@media only screen and (max-width: 800px){
-article{
-    display: block;
-}
-}
+
 
  /*Para tablets y PC */
 @media only screen and (min-width: 801px){
