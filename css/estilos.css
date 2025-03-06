@@ -36,7 +36,7 @@ header{
 }
 main {
     background-image: url("../img/fondo.jpg");
-    background-size:cover;
+    background-size: cover;
     background-color: lightgray;
 }
 
@@ -45,7 +45,7 @@ main {
     text-shadow: 0.1em 0.1em rgb(63, 63, 63);
 }
 
-#home, #proyectos {
+#home, #proyectos, #skills, #sobremi {
     text-align: center;
 }
 
@@ -66,10 +66,11 @@ main {
 
 article {
     width: 100%;
+    margin: 0.5em;
+    text-align: center;
 }
 
 article h3 {
-    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 0.1em 0.1em rgb(63, 63, 63);
 }
@@ -80,9 +81,8 @@ article h3 {
 
 #foto {
     display: block;
-    width: 125px;
-    height: auto;
     margin: auto;
+    width: 190px;
     border-radius: 100%;
 }
 
@@ -100,17 +100,7 @@ footer{
 
 #menosuno, #masuno {
     display: none;
-    margin: 1em;
 }
-
-#menosuno {
-    left: 0;
-}
-
-#masuno {
-    right: 0;
-}
-
 
  /*Para tablets y PC */
 @media only screen and (min-width: 801px){
@@ -142,15 +132,17 @@ footer{
         flex: 10 1 auto;
         }
 
-    #menosuno, #masuno {display: block;}
+    #menosuno, #masuno {
+        display: block;
+    }
 
+    #menosuno {
+        margin-left: 0;
+    }
+    #masuno {
+        margin-right: 0;
+    }
     .mySlides {display:none;}
-    
-    /* article {
-        flex: 100% 0 0;
-        scroll-snap-align: start;
-        object-fit: cover;
-    } */
 
     #home {
         margin: auto;
@@ -174,19 +166,6 @@ footer{
     #hardskills {
         margin: auto;
         margin-top: 0;
-    }
-    #foto {
-        margin-left: 5em;
-    }
-
-    #wrappermi {
-        display: flex;
-    }
-
-    #wrappermi * {
-        margin: auto;
-        margin-top: 0;
-        padding: 2em;
     }
 
     header div {
