@@ -95,6 +95,11 @@ footer{
     box-shadow: 0px -5px 5px gray;
 }
 
+footer a {
+    background-color: black;
+    padding: 0.5em;
+}
+
 #email {
     text-decoration: none;
     color: orange;
