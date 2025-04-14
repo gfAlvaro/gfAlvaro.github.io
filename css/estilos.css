@@ -5,13 +5,15 @@ body{
 }
 
 header, footer {
-    background-color: black;
+    /*background-color: black;*/
+    background-image: url("/img/patronBinario.jpg");
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flexbox;
+    background-color: black;
 }
 
 nav ul li {
@@ -27,7 +29,7 @@ header{
     font-weight: bold;
     box-shadow: 0px 5px 5px gray;
     text-align: center;
-    padding: 0.1em;
+    padding: 0;
 }
 
 .iconosredes > a > img {
@@ -35,9 +37,9 @@ header{
     height: 50px;
 }
 main {
-    background-image: url("../img/fondo.jpg");
+    /*background-image: url("../img/circuit.jpg");*/
     background-size: cover;
-    background-color: lightgray;
+    background-color: whitesmoke;
 }
 
 #titulologo {
