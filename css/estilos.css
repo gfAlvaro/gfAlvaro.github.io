@@ -42,27 +42,27 @@ main {
     background-color: whitesmoke;
 }
 
-#titulologo {
+.titulologo {
     margin: auto;
     text-shadow: 0.1em 0.1em rgb(63, 63, 63);
 }
 
-#home, #proyectos, #skills, #sobremi {
+.home, .proyectos, .skills, .sobremi {
     text-align: center;
 }
 
-#proyectos ul{
+.proyectos ul{
     margin-top: 5em;
     list-style-type: none;
     text-align: center;
     padding: 0;
 }
 
-#proyectos ul li {
+.proyectos ul li {
     padding: 1em;
 }
 
-#proyectos ul li a {
+.proyectos ul li a {
     text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ article h3 {
     list-style-type: none;
 }
 
-#foto {
+.foto {
     display: block;
     margin: auto;
     width: 190px;
@@ -100,12 +100,12 @@ footer a {
     padding: 0.5em;
 }
 
-#email {
+.email {
     text-decoration: none;
     color: orange;
 }
 
-#menosuno, #masuno {
+.menosuno, .masuno {
     display: none;
 }
 
@@ -139,38 +139,38 @@ footer a {
         flex: 10 1 auto;
         }
 
-    #menosuno, #masuno {
+    .menosuno, .masuno {
         display: block;
     }
 
-    #menosuno {
+    .menosuno {
         margin-left: 0;
     }
-    #masuno {
+    .masuno {
         margin-right: 0;
     }
     .mySlides {display:none;}
 
-    #home {
+    .home {
         margin: auto;
     }
 
-    #skills {
+    .skills {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    #skills h3 {
+    .skills h3 {
         grid-column: 1/3;
         grid-row: 1;
         margin-bottom: 0;
     }
 
-    #softskills {
+    .softskills {
         margin: auto;
         margin-top: 0;
     }
-    #hardskills {
+    .hardskills {
         margin: auto;
         margin-top: 0;
     }
@@ -183,7 +183,7 @@ footer a {
         flex: 1 0 auto;
     }
 
-    #iconosredesfooter{
+    .iconosredesfooter{
         display: none;
     }
 }
