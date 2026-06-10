@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     showDivs(slideIndex);
-    document.querySelector("menosuno").addEventListener("click", () => plusDivs(-1));
-    document.querySelector("masuno").addEventListener("click", () => plusDivs(1)); 
+    document.getElementById("menosuno").addEventListener("click", () => plusDivs(-1));
+    document.getElementById("masuno").addEventListener("click", () => plusDivs(1)); 
     document.querySelectorAll(".navoption").forEach(element => element.addEventListener("click", function(){
         slideIndex = Number(this.getAttribute( "id"));
         plusDivs(0);
