@@ -2,10 +2,6 @@
  * Comportamiento de mi portfolio
  * @author Álvaro García Fuentes
  **/
-
-
-document.addEventListener("DOMContentLoaded", () => {
-
     let slideIndex = 1;
     let plusDivs = n => showDivs(slideIndex += n);
     let showDivs = n => {
@@ -15,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         for (element of misSlides)
             element.style.display = element == misSlides[slideIndex-1]? "block" : "none";
     }
-
+document.addEventListener("DOMContentLoaded", () => {
     showDivs(slideIndex);
     document.getElementById("menosuno").addEventListener("click", () => plusDivs(-1));
     document.getElementById("masuno").addEventListener("click", () => plusDivs(1)); 
